@@ -1,0 +1,30 @@
+{
+  "name": "food-order-steakhouse",
+  "version": "1.0.0",
+  "description": "Projet d'application web de fin de session.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env PORT=1337 npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon --ignore public/ server.js",
+    "browser-sync": "browser-sync start --config './browser-sync.js'"
+  },
+  "author": "Jonathan Wilkie",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.1",
+    "memorystore": "^1.6.4",
+    "promise-mysql": "^4.1.3",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5"
+  }
+}

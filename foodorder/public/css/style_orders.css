@@ -1,0 +1,134 @@
+.dropbtn{
+    background-color: rgba(255, 255, 255, 0.123);
+    color:white;
+    padding: 1rem;
+    border: 1px solid white;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.dropdown{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: #1d1d1d;
+    width:100%;
+    overflow: auto;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.show-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.dropdown-content a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 1rem;
+}
+.dropdown-content a{
+    background-color: #313131 ;
+}
+
+.orders-container{
+    display:flex;
+    flex-direction: column;
+    margin: 0 10% 10% 10%;
+    background-color:  rgba(0, 0, 0, 0.486);
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.order{
+    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.466), rgba(202, 43, 43, 0.466) 99%);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    flex:1;
+    display:flex;
+    margin:1%;
+}
+
+.dishes{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+
+.dish{
+    display:flex;
+    margin: 1rem 0.5rem 0 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+.name{
+    width:70%;
+    max-width: 70%;
+}
+
+.order-informations{
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+    min-height: 15rem;
+    min-width: 13rem;
+    margin: 0 2rem 0 2rem;
+    text-align: center;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.arrow img{
+    width:10rem;
+    max-width: 100%;
+    transform: rotate(270deg);
+
+}
+.arrow:hover{
+    transform:translate(0,-3.9rem);
+}
+
+.checkbox-container{
+    border:1px solid white;
+    border-radius:1rem ;
+    display:flex;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    width:70% ;
+    margin:auto;
+    margin-top: 7rem;
+}
+
+.checkbox-element{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#CheckBox{
+    background-color: green;
+    border-radius: 50%;
+    height:1.5rem;
+    width:3rem;
+}

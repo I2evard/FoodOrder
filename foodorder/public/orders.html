@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteakHouse</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_orders.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="MainMenu" id="NavBar">
+                    <a href="index.html" class="Logo" aria-current="page">
+                        <img src="img/houston_Logo.png" alt="PlaceHolder_Logo">
+                        <span>Food Order</span> 
+                    </a>
+                    <div class="Login-Options" id="Login-Options">
+                        <button class="dropbtn hidden" >Btn</button>
+                        <div id="notConnected">
+                            <a href="accountCreation.html" id="btnSignup">Sign up</a>
+                            <a href="#" id="btnLogin">Login</a>
+                        </div>
+                        <div id="Login-Inputs" class="hidden">
+                            <div class = "row">
+                                <div id="id-error" class="error">Invalid</div>
+                                <input type="text" id="connectionID" name="connectionID" placeholder="ID">
+                            </div>
+                            <div class="row">
+                                <div id="password-error" class="error">Invalid</div>
+                                <input type="password" id="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "hidden" id= "Options">
+                        <a href="index.html" id="btnViewOrders">Menu</a>
+                        <a href="#" id="btnLogout">Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div id= "Checkbox-Container" class="checkbox-container">
+                <div id="CheckBox-Element" class ="checkbox-element hidden">
+                    <label for="checkbox" id="Label">checkbox</label>
+                    <input type="checkbox" id="CheckBox" placeholder="state">    
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="Orders-Container" class="orders-container">
+                <a href="#/" class="state hidden" id="State">En traitement</a>
+                <div id ="Order" class="order hidden">
+                    <div id="Dishes" class="dishes">
+                        <div id="Dish" class="dish hidden">
+                            <div id="Qty" class="qty">##</div>
+                            <div id="Name" class="name">NAME</div>
+                            <div id="Price" class="price">##.##$</div>
+                        </div>
+                    </div>
+                    <div id="Order-Informations" class="order-informations">
+                        <div id="Total-Price" class="total-price">TOTAL PRICE</div>
+                        <div id="Client-Name" class="client-name">CLIENT NAME</div>
+                        <div id="Address" class="address">444 St. PLACEHOLDER</div>
+                        <div id="Date" class="date">2020/12/24 14:30</div>
+                        <div id = "Order-States" class="dropdown">
+                            <button id="btnDropdown" class="dropbtn">Order-State</button>
+                            <div id="myDropdown" class="dropdown-content">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="Up-Arrow" class="arrow" aria-current="page">
+                <img src="img/long_arrow.png" alt="PH_arrow">
+            </a>
+        </main>
+        <footer>
+            &copy; Collège La Cité
+        </footer>
+    </div>
+
+
+    <script src="js/header.js"></script>
+    <script src="js/page_orders.js"></script>
+    <script src="js/formToObject.js"></script>
+</body>
+</html>

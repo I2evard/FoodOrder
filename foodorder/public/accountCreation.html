@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteakHouse</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="MainMenu">
+            <a href="index.html" class="Logo" aria-current="page">
+                <img src="img/houston_Logo.png" alt="PlaceHolder_Logo">
+                <span>Food Order</span> 
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="form">
+            <h2>Create your account</h2>
+            <form id="user-form" novalidate>
+                <div class="div_section">
+                    <input type="text" id="id" name="id" class="textbox " placeholder="Enter your ID"  required maxlength="50" minlength="0">
+                    <div id="id-error" class="hidden"></div>
+                </div>
+        
+                <div class="div_section">
+                    <input type="text" id="firstName" name="firstName" class="textbox " placeholder="Enter your first name" required minlength="1" maxlength="100">
+                    <div id="firstName-error" class="hidden"></div>
+                </div>
+
+                <div class="div_section">
+                    <input type="text" id="lastName" name="lastName" class="textbox " placeholder="Enter your last name" required minlength="1" maxlength="100">
+                    <div id="lastName-error" class="hidden"></div>
+                </div>
+
+                <div class="div_section">
+                    <input type="password" id="password" name="password" class="textbox "  placeholder="Enter your password"  required minlength="1" maxlength="50">
+                    <div id="password-error" class="hidden"></div>
+                </div>
+                
+                <div class="div_section">  
+                    <input type="password" id="confim_password" name="confim_password " class="textbox "  placeholder="Confirm your password"  required minlength="1" maxlength="50">
+                    <div id="confim_password-error" class="hidden"></div>
+                </div>
+                
+                <div class="border"></div>
+                <div class="div_input">
+
+                    <input type="submit" class="input" value="Create" id="btn-createAccount">
+                    <a href="./index.html" class="backLink">Back to Menu</a>     
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; Collège La Cité
+    </footer>
+
+    <script src="js/account.js"></script>
+    <script src="js/formToObject.js"></script>
+</body>
+</html>

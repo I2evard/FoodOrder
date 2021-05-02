@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteakHouse</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/payment.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="MainMenu">
+            <a href="index.html" class="Logo" aria-current="page">
+                <img src="img/houston_Logo.png" alt="PlaceHolder_Logo">
+                <span>Food Order</span> 
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1>Check out</h1>
+        <div class="form">
+            <div class="info">
+                <h2>billing information </h2>
+            </div>
+            
+            <form id="user-form" novalidate>
+                <div class="infoSection">
+                    <div class="info_sub_Section">
+                        <label>Address</label>
+                        <input type="text" id="Address" name="Address" class="textbox" placeholder="Address">
+                        <div id="Address-error" class="error"></div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h2>credit card information </h2>
+                    <img src="./img/optionPayment.png" alt="visa martercard paypal" id="payment">
+                </div>
+
+                <div class="infoSection">
+                    <div class="info_sub_Section">
+                        <label>Card Number (debit or credit)</label>
+                        <input type="text" id="CardNumber" name="CardNumber" class="textbox" placeholder="Card Number"  required maxlength="50" minlength="0">
+                        <div id="CardNumber-error" class="error"></div>
+                    </div>
+                </div>
+                
+                <div class="infoSection">
+                    <div class="info_sub_Section">
+                        <label>Expiry date(Month) </label>
+                        <input type="text" id="EDMonth" name="EDMonth" class="textbox" placeholder="Month"  required maxlength="50" minlength="0">
+                        <div id="EDMonth-error" class="error"></div>
+                    </div>
+                    <div class="info_sub_Section">
+                        <label>Expiry date(Year)</label>
+                        <input type="text" id="EDYear" name="EDYear" class="textbox" placeholder="year"  required maxlength="50" minlength="0">
+                        <div id="EDYear-error" class="error"></div>
+                    </div>
+                    <div class="info_sub_Section">
+                        <label>CVV</label>
+                        <input type="text" id="CVV" name="CVV" class="textbox" placeholder="CVV"  required maxlength="50" minlength="0">
+                        <div id="firstname-error" class="error"></div>
+                    </div>
+                </div>
+                
+                <div class="border"></div>
+                
+                <div class="info_sub_Section">
+                    <input type="submit" class="input" value="Order" id="btn-Order">    
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; Collège La Cité
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/formToObject.js"></script>
+</body>
+</html>

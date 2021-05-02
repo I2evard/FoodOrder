@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteakHouse</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="MainMenu">
+                    <a href="index.html" class="Logo" aria-current="page">
+                        <img src="img/houston_Logo.png" alt="PlaceHolder_Logo">
+                        <span>Food Order</span> 
+                    </a>
+                    <div class="Login-Options" id = "Login-Options">
+                        <button class="dropbtn hidden" >Btn</button>
+                        <div id="notConnected">
+                            <a href="accountCreation.html" id="btnSignup">Sign up</a>
+                            <a href="#" id="btnLogin">Login</a>
+                        </div>
+                        <div id="Login-Inputs" class="hidden">
+                            <div class = "row">
+                                <div id="id-error" class="error">Invalid</div>
+                                <input type="text" id="connectionID" name="connectionID" placeholder="ID">
+                            </div>
+                            <div class="row">
+                                <div id="password-error" class="error">Invalid</div>
+                                <input type="password" id="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "hidden" id="Options">
+                        <a href="orders.html" id="btnViewOrders">Commandes</a>
+                        <a href="#" id="btnLogout">Logout</a>
+                    </div>
+                </div>
+                <div class="Nav-Categories" id="NavBar">
+                    <ul>
+                        <li class="first "><a href="#Appetisers">Appetisers</a></li>
+                        <li><a href="#Salads">Salads</a></li>
+                        <li><a href="#MainDishes">Main</a></li>
+                        <li><a href="#Childrens">Children</a></li>
+                        <li class="last"><a href="#Deserts">Deserts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <form id="Menu">
+                <div id="Appetisers" class="Categorie">
+                    <h2>Appetisers</h2>
+                </div>
+                <div id="Salads" class="Categorie">
+                    <h2>Salads</h2>
+                </div>
+                <div id="MainDishes" class="Categorie">
+                    <h2>Main Dishes</h2>
+                    <div id="Container-Dish" class="Dish-Template hidden">
+                        <img id="image" src="" alt="PlaceHolder">
+    
+                        <div id="Details">
+                            <h3 id="Name">Name</h3>
+                                <div id="Description-Text"></div>
+                        </div>
+                        
+                        <div id="Price-Details">
+                            <div>
+                                $ <div id="Price">##,##</div> /u
+                            </div>
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" step="1" title="Quantity">
+                            <input type="button" value="Add to order" id="btn-addToOrder">
+                        </div>
+                    </div>
+                </div>
+                <div id="Childrens" class="Categorie">
+                    <h2>Children</h2>
+                </div>
+                <div id="Deserts" class="Categorie">
+                    <h2>Deserts</h2>
+                </div>
+                
+            </form>
+
+            <div id="Order-Quickview" class="hidden">
+                <div id = "head" >
+                    <div class="alignItemsCenter">
+                        <input type="text" id="Address" name="Address" class="textbox" placeholder="Address">
+                        <div id="Address-error" class="error"></div>
+                    </div>
+                </div>
+                <div id = "Body">
+                    <div id="Container-Quickview" class="Quickview-template hidden">
+                        <div id="Details">
+                            <div class="row alignItemsCenter">
+                                <img id="image" src="img/bifteck-filet-mignon-bœuf-grilrouge-porto-poivre-4677.jpg" alt="PlaceHolder">
+                                <div id="Name">Name</div>
+                            </div>
+                            <div class="row spaceEvenly smallPad CenterItems">
+                                <div id="Quantity">#</div>
+                                <div id="Total-Price">##,##$</div>
+                                <input type="button" value="X" id="btn-remove-item">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Foot">
+                    <div id="Total">Total: ###,##$</div>
+                    <input type="submit" value="Submit" id="btn-submit">
+                </div>
+            </div>
+            <a href="#" id="Up-Arrow" class="arrow" aria-current="page">
+                <img src="img/long_arrow.png" alt="PH_arrow">
+            </a>
+        </main>
+        <footer>
+            &copy; Collège La Cité
+        </footer>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/formToObject.js"></script>
+</body>
+</html>

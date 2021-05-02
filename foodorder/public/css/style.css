@@ -1,0 +1,564 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif; 
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+img{
+    max-width: 30%;
+}
+
+.hidden {
+    display:none !important;
+}
+
+.Logo {
+    Width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.MainMenu{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+
+#notConnected {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    padding: 0.5rem
+}
+.MainMenu div {
+    justify-content: center;
+}
+
+.Login-Options{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 0.5rem;
+}
+
+#Options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.MainMenu div a{
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#Login-Inputs {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-around;
+    max-height: 100%;
+    
+}
+#Login-Inputs input{
+    width: 50%;
+    display:flex;
+    font-size: 1rem;
+    margin: 0.3rem 1rem 0.3rem 1rem;
+}
+
+.MainMenu div a:hover{
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+header nav{
+    color: #fff;
+    background-color: #000000;
+    position: relative;
+    z-index: 30;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav li a {
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, black, #cc2b2b 99%);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-bottom: 0.3rem;
+    box-shadow: 0 1px .5rem .1rem #00000033;
+    transition: all 0.1s linear;
+}
+
+a:link, a:visited{
+    color: rgb(196, 196, 196);
+}
+
+a:hover, a:active{
+    color: white;
+}
+
+nav li a:hover, nav li a:active{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), #ff3a3a 99%);
+    font-size: 2vw;
+    height: 3rem;
+}
+
+.Nav-Categories{
+    display:flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+.Categorie h2{
+    background-image: linear-gradient(to bottom, rgb(41, 41, 41), #df2f2f 99%);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin:0;
+}
+
+.Categorie{
+    
+    border-radius: 0.5rem;
+
+    margin: 1rem 1rem 1rem 0;
+}
+
+header nav ul {
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin:0;
+    max-width: 100%;
+}
+
+header nav ul li{
+    flex: 1 1 auto;
+    margin: 0 0.1rem 0rem 0.1rem;
+    position:relative;
+}
+
+.first{
+    margin-left: 1rem;
+}
+.last{
+    margin-right: 1rem;
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+}
+
+
+#Menu{
+    display:flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+#Menu .Dish-Template{
+    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.466), rgba(202, 43, 43, 0.466) 99%);
+    display: flex;
+    max-width:99%;
+    justify-content: space-between;
+    align-self: center;
+    padding: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-shadow: 0 0 0.05rem white;
+}
+
+#btn-addToOrder{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid black;
+    outline: none;
+}
+
+#btn-addToOrder:hover{
+    background-color: white;
+}
+
+#btn-addToOrder:active{
+    background-color: rgb(0, 255, 0);
+}
+
+
+#Menu img{
+    box-shadow: 0 0 0.5rem black;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    align-self: center;
+    max-width: 20vw;
+    max-height: 20vw;
+}
+
+#Details{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+#Price-Details{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Price-Details div{
+    display: flex;
+    flex-direction: row;
+}
+
+#quantity{
+    text-align: center;
+    width: 4rem;
+    height: 2rem
+}
+
+
+#Order-Quickview img{
+    border-radius: 1rem;
+    align-self: center;
+    padding: 0.2rem;
+    max-width: 33%;
+}
+#Order-Quickview{
+    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.466), rgba(202, 43, 43, 0.466) 99%);
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    max-width: 17rem;
+    max-height: 75%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    bottom:0;
+    right:0;
+}
+
+#Order-Quickview #Body input{
+    padding:0.4rem;
+}
+
+#Order-Quickview .Quickview-template{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#Order-Quickview #Details{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: space-around;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1rem;
+    flex-wrap: nowrap;
+}
+
+#Order-Quickview #Body{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    overflow:auto;
+    max-height: 89%;
+}
+#btn-remove-item{
+    border-radius: 0.3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;
+    outline: none;
+}
+#btn-remove-item:active{
+    background-color: rgb(167, 0, 0);
+}
+
+.CenterItems{
+    align-items: center;
+}
+
+#Foot{
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    bottom: 0;
+}
+#Foot #Total{
+    padding: 0.5rem 0 0.5rem 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-top: 1px solid black;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+#Foot #btn-submit{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+    border: 2px solid green;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+#Foot #btn-submit:hover{
+    border-radius: 0.5rem;
+    opacity: 1;
+    border: 2px solid green;
+    background-color: green;
+}
+#Foot #btn-submit:active{
+    border-radius: 0.5rem;
+    border: 2px solid green;
+    background-color: darkgreen;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.arrow{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(36, 36, 36) 99%);
+    border: 1px solid white;
+    display:flex;
+    position:fixed;
+    bottom: -4rem;
+    left: 2rem;
+    width: 5rem;
+    z-index: 1;
+    border-top-left-radius: 2rem ;
+    border-top-right-radius: 2rem ;
+    transition: all 0.1s linear;
+}
+.arrow img{
+    width:10rem;
+    max-width: 100%;
+    transform: rotate(270deg);
+
+}
+.arrow:hover{
+    transform:translate(0,-3.9rem);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 0;
+    min-height: 40rem;
+}
+
+option:disabled {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+.border {
+    margin: 2rem 0;
+    border-bottom: .4rem solid #000;
+}
+
+.error {
+    display: none;
+    align-items: center;
+    margin:0.3rem 0 0.3rem 0;
+    padding:0 0.3rem 0 0.3rem;
+    background-color: red;
+}
+
+.error.visible {
+    display: flex;
+}
+
+.error::before {
+    content: 'error';
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+.textbox{
+    margin: 1.5rem auto;
+    background-color: rgba(255, 255, 255, 0.137);
+    border: none;
+    padding: 6px;
+    color:white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.textbox::placeholder{
+    color: white;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+.spaceEvenly{
+    justify-content: space-evenly;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+.smallPad{
+    padding:0.3rem;
+}
+
+footer {
+    padding: 1rem;
+    box-shadow: 0 -1px .5rem .1rem #00000033;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 800px){
+
+    #Menu {
+        flex: 1 1 auto;
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    #Menu .Dish-Template{
+        flex-direction: column;
+    }
+
+    #Details{
+        justify-content: space-between ;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    #Price-Details{
+        justify-content: space-between ;
+        flex-direction: row;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    #Order-Quickview {
+        min-width: 100%;
+        
+    }
+
+    #Order-Quickview #Body{
+        display: none;
+    }
+
+    #notConnected {
+        justify-content: space-evenly;
+    }
+}
+
+@media(min-width: 48rem){
+    main {
+        display:flex;
+    }
+
+    select {
+        margin-bottom:0.5rem;
+    }
+    
+    .border {
+        display: none;
+    }
+
+    #btn-ajouter {
+        margin-top: 1rem;
+    }
+
+}
